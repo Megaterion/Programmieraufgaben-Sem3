@@ -1,12 +1,12 @@
 #include <iostream>
 
-#include "aufgabe17.cpp"
+//#include "aufgabe17.cpp"
 
 int main()
 {
     int input = 0;
-    std::cout << "Welche Aufgabe möchtest du ausführen?\n";
-    cin >> input;
+    std::cout << "Welche Aufgabe willst du ausfueren?\n";
+    std::cin >> input;
 
 
     switch (input)
@@ -15,7 +15,7 @@ int main()
         std::cout << "error\n";
         break;
     case 17:
-        std::cout << "Aufgabe_17 wird ausgeführt\n";
+        std::cout << "Aufgabe_17 wird ausgefuehrt\n";
         break;
     case 18:
         std::cout << "error\n";
@@ -24,10 +24,10 @@ int main()
         std::cout << "error?\n";
         break;
     default:
-        cout << "unknown!" << endl;
+        std::cout << "unknown!" << std::endl;
         break;
     }
-    cout << "**************************************************" << endl;
+    std::cout << "**************************************************" << std::endl;
 
     return 0;
 }

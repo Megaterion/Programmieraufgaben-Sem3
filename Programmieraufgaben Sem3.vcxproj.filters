@@ -35,5 +35,8 @@
     <ClInclude Include="shape2D.h">
       <Filter>Headerdateien\Aufgabe 17</Filter>
     </ClInclude>
+    <ClInclude Include="aufgabe17.h">
+      <Filter>Headerdateien\Aufgabe 17</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

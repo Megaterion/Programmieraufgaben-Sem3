@@ -132,6 +132,7 @@
     <ClCompile Include="shape2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="aufgabe17.h" />
     <ClInclude Include="shape2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
