@@ -1,6 +1,6 @@
-#ifndef AUFGABE17
-#define AUFGABE17
+#ifndef _AUFGABE17_
+#define _AUFGABE17_
 
-int example(int x, int y);
+void aufgabe();
 
 #endif

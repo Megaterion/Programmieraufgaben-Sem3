@@ -1,6 +1,6 @@
 #include <iostream>
 
-//#include "aufgabe17.cpp"
+#include "aufgabe17.h"
 
 int main()
 {
@@ -16,6 +16,7 @@ int main()
         break;
     case 17:
         std::cout << "Aufgabe_17 wird ausgefuehrt\n";
+        aufgabe();
         break;
     case 18:
         std::cout << "error\n";
