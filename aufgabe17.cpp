@@ -1,13 +1,11 @@
-
 #include <iostream>
 #include "shape2D.h"
 
 using namespace std;
 
 // Example for the usage of strong typed enumeration
-int aufgabe()
+void aufgabe()
 {
-
     int input = -1;
     cout << "Input a number in the range [0, 3]" << endl;
     cin >> input;
@@ -79,5 +77,5 @@ int aufgabe()
     cout << "\nWhich figure is closer to the origin? \n" << endl;
     display(isCloserToOrigin(circle, square));
 
-    return 0;
+    return;
 }

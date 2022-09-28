@@ -1,5 +1,3 @@
-
-
 #ifndef _SHAPE2D_
 #define _SHAPE2D_
 
