@@ -5,7 +5,7 @@
 using namespace std;
 
 // Example for the usage of strong typed enumeration
-int main()
+int aufgabe()
 {
 
     int input = -1;
