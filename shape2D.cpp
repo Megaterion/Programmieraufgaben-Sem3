@@ -4,8 +4,6 @@
 
 #include "shape2D.h"
 
-using namespace std;
-
 // class shape2D
 
 Shape2D::Shape2D(double xIn, double yIn)
@@ -26,8 +24,8 @@ void Shape2D::setTypeID(Shape2DType typeIDIn)
 
 void Shape2D::display()
 {
-    cout << "Shape2D: X " << x << ", Y " << y << endl;
-    cout << "\n" << endl;
+    std::cout << "Shape2D: X " << x << ", Y " << y << std::endl;
+    std::cout << "\n" << std::endl;
 }
 
 double Shape2D::distance()
@@ -45,7 +43,7 @@ Circle::Circle(double xIn, double yIn, double radiusIn)
 
 void Circle::display()
 {
-    cout << "Circle: radius " << radius << endl;
+    std::cout << "Circle: radius " << radius << std::endl;
     Shape2D::display();
 }
 
@@ -59,7 +57,7 @@ Rectangle::Rectangle(double xIn, double yIn, double widthIn, double hightIn)
 
 void Rectangle::display()
 {
-    cout << "Rectangle: width " << width << ", hight " << hight << endl;
+    std::cout << "Rectangle: width " << width << ", hight " << hight << std::endl;
     Shape2D::display();
 }
 
@@ -73,7 +71,7 @@ Square::Square(double xIn, double yIn, double lengthIn)
 
 void Square::display()
 {
-    cout << "Square: length " << width << endl;
+    std::cout << "Square: length " << width << std::endl;
     Shape2D::display();
 }
 

@@ -1,37 +1,34 @@
 #include <iostream>
 #include "shape2D.h"
 
-using namespace std;
-
-// Example for the usage of strong typed enumeration
 void aufgabe()
 {
     int input = -1;
-    cout << "Input a number in the range [0, 3]" << endl;
-    cin >> input;
+    std::cout << "Input a number in the range [0, 3]\n";
+    std::cin >> input;
     // strong typed enumerations need a cast from integer to Shape2DType.
     Shape2DType id = static_cast<Shape2DType>(input);
 
-    cout << "Type ";
+    std::cout << "Type ";
     switch (id)
     {
     case Shape2DType::Shape2D:
-        cout << "Shape2D! " << endl;
+        std::cout << "Shape2D! \n";
         break;
     case Shape2DType::Circle:
-        cout << "Circle! " << endl;
+        std::cout << "Circle! \n";
         break;
     case Shape2DType::Rectangle:
-        cout << "Rectangle! " << endl;
+        std::cout << "Rectangle! \n";
         break;
     case Shape2DType::Square:
-        cout << "Square! " << endl;
+        std::cout << "Square! \n";
         break;
     default:
-        cout << "unknown!" << endl;
+        std::cout << "unknown!\n";
         break;
     }
-    cout << "**************************************************" << endl;
+    std::cout << "**************************************************\n";
 
     /* Objekte erzeugen */
     Shape2D shape(3, 2);
@@ -47,34 +44,34 @@ void aufgabe()
     sVec[3] = &square;
 
 
-    cout << "\nInfo of each figure using the display() of the object: \n" << endl;
+    std::cout << "\nInfo of each figure using the display() of the object: \n\n";
     shape.display();
     circle.display();
     rectangle.display();
     square.display();
-    cout << "**************************************************" << endl;
+    std::cout << "**************************************************\n";
 
-    cout << "\nUse down-casts with sVec elements to call display methods: \n" << endl;
+    std::cout << "\nUse down-casts with sVec elements to call display methods: \n\n";
     static_cast<Shape2D*>(sVec[0])->display();
     static_cast<Circle*>(sVec[1])->display();
     static_cast<Rectangle*>(sVec[2])->display();
     static_cast<Square*>(sVec[3])->display();
-    cout << "**************************************************" << endl;
+    std::cout << "**************************************************\n";
 
-    cout << "\nUse up-casts to call base class display methods: \n" << endl;
+    std::cout << "\nUse up-casts to call base class display methods: \n\n";
     static_cast<Shape2D>(shape).display();
     static_cast<Shape2D>(circle).display();
     static_cast<Shape2D>(rectangle).display();
     static_cast<Shape2D>(square).display();
-    cout << "**************************************************" << endl;
+    std::cout << "**************************************************\n";
 
-    cout << "\nInfo of each figure using global display() function: \n" << endl;
+    std::cout << "\nInfo of each figure using global display() function: \n\n";
     for (int i = 0; i < 4; i++)
     {
         display(*sVec[i]);
     }
 
-    cout << "\nWhich figure is closer to the origin? \n" << endl;
+    std::cout << "\nWhich figure is closer to the origin? \n\n";
     display(isCloserToOrigin(circle, square));
 
     return;

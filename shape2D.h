@@ -4,8 +4,6 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
-
 enum class Shape2DType
 {
     Shape2D,
