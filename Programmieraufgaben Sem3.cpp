@@ -2,8 +2,6 @@
 
 #include "aufgabe17.h"
 
-//test
-//test2
 
 int main()
 {
